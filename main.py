@@ -86,7 +86,9 @@ if __name__ == "__main__":
                 time.sleep(2000)
             else:
                 session_bot()
-                time.sleep(random.randint(7000, 10000))
+                time_to_sleep = random.randint(7000, 10000)
+                log_inf(f'{time_to_sleep} с до новой сессии')
+                time.sleep(time_to_sleep)
         except Exception as ex:
             print(ex)
             break
