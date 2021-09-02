@@ -13,29 +13,29 @@ from clean import clean
 
 # лайки на хештеге
 def pod_hashtag(my_bot):
-    my_bot.like_photo_by_hashtag("forest", random.randint(7, 30))
+    my_bot.like_photo_by_hashtag("forest", random.randint(7, 24))
 
 
 # подписки на подпищиков рандомного человека на хештеге
 def subscribe(my_bot):
     usr = my_bot.get_donor_followers('forest')
-    my_bot.get_followers(usr, random.randint(7, 25))
+    my_bot.get_followers(usr, random.randint(7, 20))
 
 
 # отписки от тех кто не подписался в ответ
 def unsubscribe(my_bot):
     my_bot.unsubscribe_create_list(username)
-    my_bot.unsubscribe_from_list(username, random.randint(7, 25))
+    my_bot.unsubscribe_from_list(username, random.randint(7, 22))
 
 
 # лайки в ленте
 def pod_feed(my_bot):
-    my_bot.like_photo_by_feed(random.randint(7, 30))
+    my_bot.like_photo_by_feed(random.randint(7, 25))
 
 
 # лайки в ленте + подписки на коментаторов
 def pod_feed_and_podes(my_bot):
-    my_bot.like_photo_by_feed(random.randint(7, 30))
+    my_bot.like_photo_by_feed(random.randint(7, 25))
     my_bot.get_followers_podes(random.randint(7, 15))
 
 

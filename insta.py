@@ -506,6 +506,8 @@ class InstagramBot:
             unfollow_users_list = unfollow_file.readlines()
             unfollow_users_list = [row.strip() for row in unfollow_users_list]
 
+        print(f"{len(unfollow_users_list)} длина листа отписки")
+
         count_pre = len(unfollow_users_list)
         if count_pre > num:
             count = num
